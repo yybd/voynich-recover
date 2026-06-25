@@ -61,6 +61,23 @@ python3 decrypt.py secret.txt.enc --hex 0011223344...            # 64 hex chars 
   that device's Recovery Key.
 - **"Missing dependency".** Run `python3 -m pip install cryptography` again.
 
+## Verify the download
+
+`decrypt.py` is short — read it before you run it (it asks for your Recovery Key,
+which is equivalent to your master key). To confirm the copy you downloaded is
+byte-for-byte the one in this repository:
+
+```sh
+shasum -a 256 decrypt.py
+# ba3f38e8132e20d2c04155592669a3f8b02625b16009f222aae79f70be9ba280  decrypt.py
+```
+
+The script is fully offline — it makes no network connections and runs no other
+programs. It writes the decrypted file owner-only (mode 0600), never overwrites an
+existing file unless you pass `--force`, and the plaintext (including a decrypted
+`.mdvault` password file) lands on disk in the clear — delete it when you're done.
+<!-- Maintainers: regenerate this checksum (shasum -a 256 decrypt.py) whenever decrypt.py changes. -->
+
 ## License
 
 [MIT](LICENSE) — use, read, and audit freely.
