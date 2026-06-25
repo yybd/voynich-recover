@@ -24,10 +24,13 @@ readable Python file with no magic. The full on-disk format is documented in
 ## Use it (macOS / Linux)
 
 ```sh
-# 1. Install the one dependency (once)
+# 1. Download the script (full URL — the .py file itself, not the page)
+curl -O https://storage.bdtech.app/file-encryption/recover/decrypt.py
+
+# 2. Install the one dependency (once)
 python3 -m pip install cryptography
 
-# 2. Decrypt — you'll be asked for your Recovery Key (input is hidden,
+# 3. Decrypt — you'll be asked for your Recovery Key (input is hidden,
 #    so it is never written to your shell history)
 python3 decrypt.py secret.txt.enc
 ```
