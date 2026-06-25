@@ -68,5 +68,5 @@ python3 decrypt.py secret.txt.enc --hex 0011223344...            # 64 hex chars 
 ---
 
 A friendlier step-by-step page (English) lives at
-**https://storage.bdtech.app/file-encryption/recover/** ·
+**https://storage.bdtech.app/file-encryption/recover/index.html** ·
 Made by [BD TECH](https://bdtech.app) · support@bdtech.app
