@@ -69,7 +69,7 @@ byte-for-byte the one in this repository:
 
 ```sh
 shasum -a 256 decrypt.py
-# ba3f38e8132e20d2c04155592669a3f8b02625b16009f222aae79f70be9ba280  decrypt.py
+# 89a6457bf87242650e66520f11fe84f2573c5b50ee6d06a127d197c8a7bebb19  decrypt.py
 ```
 
 The script is fully offline — it makes no network connections and runs no other

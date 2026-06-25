@@ -6,7 +6,7 @@ Your data is never locked to the app: files are encrypted with standard
 AES-256-GCM, so anyone holding the key can recover them with off-the-shelf
 tools. This script is that proof — and a safety net.
 
-On-disk format (see FORMAT.md):
+On-disk format:
 
     "FENC" (4)  | version (1)  | nameLen (2, big-endian)  | originalName (nameLen)  | sealedBox
 
